@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="maindiv">
+        <h2>Welcome  to Your Personal Math Lab!</h2>
+        <p><b>Hello jee kaise ho sare</b></p>
+        
+        <h3>Let's Solve it together !</h3>
+    </div>
+    <div class="calculator">
+        <div class="input-bar">
+            <div class="input-text">
+                <input id="display" type="text" placeholder="type here" />
+            </div>
+        </div>
+        <div class="buttons" id="button">
+            <button class="ac" onclick='clearDisplay()'>AC</button>
+            <button onclick="appendValue('( )')">(       )</button>
+            <button  onclick="appendValue('%')">%</button>
+            <button  onclick="appendValue('/')"> / </button>
+            <button onclick="appendValue('7')">7</button>
+            <button onclick="appendValue('8')">8</button>
+            <button onclick="appendValue('9')">9</button>
+            <button   onclick="appendValue('*')">X</button>
+            <button onclick="appendValue('4')">4</button>
+            <button onclick="appendValue('5')">5</button>
+            <button onclick="appendValue('6')">6</button>
+            <button   onclick="appendValue('-')">-</button>
+            <button onclick="appendValue('3')">3</button>
+            <button onclick="appendValue('2')">2</button>
+            <button onclick="appendValue('1')">1</button>
+            <button   onclick="appendValue('+')">+</button>
+            <button onclick="appendValue('0')">0</button>
+            <button  onclick="appendValue('.')">.</button>
+            <button onclick="clearDisplay1()">x</button>
+    <button onclick="calculator()">=</button>   
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
